@@ -1,0 +1,17 @@
+[project]
+name = "cross-notebooks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "jupyter>=1.1.1",
+    "notebook>=7.5.4",
+    "pandas>=3.0.1",
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
