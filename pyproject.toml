@@ -5,7 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "crosscontract",
     "httpx>=0.28.1",
+    "ipywidgets>=8.1.8",
     "jupyter>=1.1.1",
     "notebook>=7.5.4",
     "pandas>=3.0.1",
@@ -15,3 +17,6 @@ dependencies = [
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.uv.sources]
+crosscontract = { git = "https://github.com/sweet-cross/crosscontract.git", rev = "v0.2.0" }
